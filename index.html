@@ -365,17 +365,6 @@ section{padding:6rem 5%}
 .ci-label{font-size:0.7rem;color:rgba(255,255,255,0.35);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.1rem}
 .ci-value a,.ci-value span{color:rgba(255,255,255,0.8);font-size:0.88rem;text-decoration:none;transition:color 0.2s}
 .ci-value a:hover{color:var(--gold)}
-.contact-form{display:flex;flex-direction:column;gap:1rem}
-.contact-form input,.contact-form textarea{
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:10px;padding:0.9rem 1.1rem;
-  color:white;font-family:'DM Sans',sans-serif;font-size:0.9rem;
-  outline:none;transition:border-color 0.2s;resize:vertical;
-}
-.contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,0.25)}
-.contact-form input:focus,.contact-form textarea:focus{border-color:var(--gold)}
-.contact-form textarea{min-height:120px}
 
 /* ── FOOTER ── */
 footer{
@@ -554,92 +543,105 @@ footer a:hover{opacity:1}
 <h2 class="section-heading">Experiência profissional</h2>
 <p class="section-sub">Uma carreira construída em projetos reais, com clientes exigentes e resultados mensuráveis.</p>
 <div class="timeline">
-<div class="timeline-item reveal">
-<div class="timeline-dot" style="background: var(--gold); box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.25);"></div>
-<p class="timeline-company" style="display: flex; align-items: center; gap: 8px;">
-  Maxxi · Bayer <span style="font-size: 0.75rem; background: rgba(201, 168, 76, 0.15); color: var(--gold); padding: 2px 8px; border-radius: 12px; font-weight: 500; border: 1px solid rgba(201, 168, 76, 0.3);">Atual</span>
-</p>
-<h3 class="timeline-role">Analista Power BI</h3>
-<p class="timeline-desc">
-          Construção de dashboards de Inventário utilizando Power BI, com levantamento
-          de requisitos direto com o cliente e entregas orientadas a decisão.
-        </p>
-<div class="timeline-tags">
-<span class="timeline-tag">Power BI</span>
-<span class="timeline-tag">DAX</span>
-</div>
-</div>
-<div class="timeline-item reveal">
-<div class="timeline-dot"></div>
-<p class="timeline-company">Bluer Tecnologia </p>
-<h3 class="timeline-role">Analista Power Platform</h3>
-<p class="timeline-desc">
-          Levantamento de requisitos com clientes, desenvolvimento de dashboards e aplicativos
-          utilizando Power BI e Power Apps. Projetos entregues para ABB, Thermansol, Ninecon,
-          Guerini, Novo Milênio e AdsTigre.
-        </p>
-<div class="timeline-tags">
-<span class="timeline-tag">Power BI</span>
-<span class="timeline-tag">Power Apps</span>
-<span class="timeline-tag">SharePoint</span>
-</div>
-</div>
-<div class="timeline-item reveal">
-<div class="timeline-dot"></div>
-<p class="timeline-company">Accenture Brasil</p>
-<h3 class="timeline-role">Vis &amp; Interaction Science Analyst</h3>
-<p class="timeline-desc">
-          Desenvolvimento e análise de dashboards para clientes como Braskem, Enel México &amp; Chile,
-          Oi e TIM. Atuação com Google BigQuery e integração com Python para pipelines de dados.
-        </p>
-<div class="timeline-tags">
-<span class="timeline-tag">Power BI</span>
-<span class="timeline-tag">Tableau</span>
-<span class="timeline-tag">Google BigQuery</span>
-<span class="timeline-tag">Python</span>
-</div>
-</div>
-<div class="timeline-item reveal">
-<div class="timeline-dot"></div>
-<p class="timeline-company">Pepsico</p>
-<h3 class="timeline-role">Analista Power BI</h3>
-<p class="timeline-desc">
-          Desenvolvimento de Relatórios — utilizando Power BI e automação de bases, reduzindo o tempo de processamento de 12 horas para 2 horas.
-        </p>
-<div class="timeline-tags">
-<span class="timeline-tag">Power BI</span>
-<span class="timeline-tag">Power Automate</span>
-<span class="timeline-tag">SharePoint</span>
-</div>
-</div>
-<div class="timeline-item reveal">
-<div class="timeline-dot"></div>
-<p class="timeline-company">Vale</p>
-<h3 class="timeline-role">Analista Power Platform</h3>
-<p class="timeline-desc">
-          Desenvolvimento de dashboards em Power BI e aplicativos para as Usinas e Minas do Pará,
-          apoiando operações críticas de mineração com dados em tempo real.
-        </p>
-<div class="timeline-tags">
-<span class="timeline-tag">Power BI</span>
-<span class="timeline-tag">Power Apps</span>
-</div>
-</div>
 
-<div class="timeline-item reveal">
-<div class="timeline-dot"></div>
-<p class="timeline-company">Baterias Moura</p>
-<h3 class="timeline-role">Analista Power BI</h3>
-<p class="timeline-desc">
-          Migração de dashboards da ferramenta Cubo para o Power BI, otimização de painéis
-          com baixa performance e redução de custos com licenças Microsoft.
-        </p>
-<div class="timeline-tags">
-<span class="timeline-tag">Power BI</span>
-<span class="timeline-tag">Migração de dados</span>
-<span class="timeline-tag">Otimização</span>
-</div>
-</div>
+  <!-- 1. Experiência Atual: Arcadis · Vale -->
+  <div class="timeline-item reveal">
+    <div class="timeline-dot" style="background: var(--gold); box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.25);"></div>
+    <p class="timeline-company" style="display: flex; align-items: center; gap: 8px;">
+      Arcadis · Vale <span style="font-size: 0.75rem; background: rgba(201, 168, 76, 0.15); color: var(--gold); padding: 2px 8px; border-radius: 12px; font-weight: 500; border: 1px solid rgba(201, 168, 76, 0.3);">Atual</span>
+    </p>
+    <h3 class="timeline-role">Analista Power Platform</h3>
+    <p class="timeline-desc">
+      Desenvolvimento de dashboards em Power BI e aplicativos para as Usinas e Minas do Pará,
+      apoiando operações críticas de mineração com dados em tempo real.
+    </p>
+    <div class="timeline-tags">
+      <span class="timeline-tag">Power BI</span>
+      <span class="timeline-tag">Power Apps</span>
+      <span class="timeline-tag">Power Automate</span>
+    </div>
+  </div>
+
+  <!-- 2. Maxxi · Bayer -->
+  <div class="timeline-item reveal">
+    <div class="timeline-dot"></div>
+    <p class="timeline-company">Maxxi · Bayer</p>
+    <h3 class="timeline-role">Analista Power BI</h3>
+    <p class="timeline-desc">
+      Construção de dashboards de Inventário utilizando Power BI, com levantamento
+      de requisitos direto com o cliente e entregas orientadas a decisão.
+    </p>
+    <div class="timeline-tags">
+      <span class="timeline-tag">Power BI</span>
+      <span class="timeline-tag">DAX</span>
+    </div>
+  </div>
+
+  <!-- 3. Bluer Tecnologia -->
+  <div class="timeline-item reveal">
+    <div class="timeline-dot"></div>
+    <p class="timeline-company">Bluer Tecnologia</p>
+    <h3 class="timeline-role">Analista Power Platform</h3>
+    <p class="timeline-desc">
+      Levantamento de requisitos com clientes, desenvolvimento de dashboards e aplicativos
+      utilizando Power BI e Power Apps. Projetos entregues para ABB, Thermansol, Ninecon,
+      Guerini, Novo Milênio e AdsTigre.
+    </p>
+    <div class="timeline-tags">
+      <span class="timeline-tag">Power BI</span>
+      <span class="timeline-tag">Power Apps</span>
+      <span class="timeline-tag">SharePoint</span>
+    </div>
+  </div>
+
+  <!-- 4. Accenture Brasil -->
+  <div class="timeline-item reveal">
+    <div class="timeline-dot"></div>
+    <p class="timeline-company">Accenture Brasil</p>
+    <h3 class="timeline-role">Vis &amp; Interaction Science Analyst</h3>
+    <p class="timeline-desc">
+      Desenvolvimento e análise de dashboards para clientes como Braskem, Enel México &amp; Chile,
+      Oi e TIM. Atuação com Google BigQuery e integração com Python para pipelines de dados.
+    </p>
+    <div class="timeline-tags">
+      <span class="timeline-tag">Power BI</span>
+      <span class="timeline-tag">Tableau</span>
+      <span class="timeline-tag">Google BigQuery</span>
+      <span class="timeline-tag">Python</span>
+    </div>
+  </div>
+
+  <!-- 5. Pepsico -->
+  <div class="timeline-item reveal">
+    <div class="timeline-dot"></div>
+    <p class="timeline-company">Pepsico</p>
+    <h3 class="timeline-role">Analista Power BI</h3>
+    <p class="timeline-desc">
+      Desenvolvimento de Relatórios — utilizando Power BI e automação de bases, reduzindo o tempo de processamento de 12 horas para 2 horas.
+    </p>
+    <div class="timeline-tags">
+      <span class="timeline-tag">Power BI</span>
+      <span class="timeline-tag">Power Automate</span>
+      <span class="timeline-tag">SharePoint</span>
+    </div>
+  </div>
+
+  <!-- 6. Baterias Moura -->
+  <div class="timeline-item reveal">
+    <div class="timeline-dot"></div>
+    <p class="timeline-company">Baterias Moura</p>
+    <h3 class="timeline-role">Analista Power BI</h3>
+    <p class="timeline-desc">
+      Migração de dashboards da ferramenta Cubo para o Power BI, otimização de painéis
+      com baixa performance e redução de custos com licenças Microsoft.
+    </p>
+    <div class="timeline-tags">
+      <span class="timeline-tag">Power BI</span>
+      <span class="timeline-tag">Migração de dados</span>
+      <span class="timeline-tag">Otimização</span>
+    </div>
+  </div>
+
 </div>
 </div>
 </section>
